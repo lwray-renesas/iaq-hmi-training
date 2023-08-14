@@ -3,7 +3,7 @@
  **************************************************************************/
 
 /* TODO: populate - The title of the lab*/
-const lab_title = "RL78/G23 IAQ Promotion Board Series - Actuators";
+const lab_title = "RL78/G23 IAQ Promotion Board Series - HMI";
 
 /* TODO: populate -
 * array of string representing lab pages used to populate side navigation bar.
@@ -13,10 +13,12 @@ const lab_title = "RL78/G23 IAQ Promotion Board Series - Actuators";
 */
 const pages_in_lab = [
     "index.html", "Home",
-    "1-Project-Creation.html", "1. Project Creation",
-    "2-Configuration.html", "2. Project Configuration",
-    "3-Source-Code.html", "3. Source Code",
-    "4-Build-And-Debug.html", "4. Build &amp; Debug"];
+    "1-QE-install.html", "1. QE Installation",
+    "2-Project-Creation.html", "2. Project Creation",
+    "3-Configuration.html", "3. Project Configuration",
+    "4-QE-Tuning.html", "4. QE Tuning",
+    "5-Build-And-Debug.html", "5. Build &amp; Debug",
+    "6-QE-Monitoring.html", "6. QE Monitoring"];
 
 /** Class for fulfilling the templating requirements of lab creation */
 class Lab_templater {
