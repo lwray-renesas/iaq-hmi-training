@@ -1,5 +1,5 @@
-# lab-rl78-g23-iaq-actuators
-A lab on interacting with the actuation portion of the RL78/G23 Indoor Air Quality Sensor Promotion Boad.
+# lab-rl78-g23-hmi
+A lab on interacting with the proximity electrode of the RL78/G23 Indoor Air Quality Sensor Promotion Boad.
 
 ## Contents
 - docs: folder containing github pages.
@@ -7,4 +7,4 @@ A lab on interacting with the actuation portion of the RL78/G23 Indoor Air Quali
 - all other files/folders are the project source which can be imported directly from git using the clone URI in e² studio.
 
 ## Lab webpage
-https://lwray-renesas.github.io/iaq-actuator-training/
+https://lwray-renesas.github.io/iaq-hmi-training/
