@@ -1,0 +1,9 @@
+***** 2023/08/15 14:20:29 *****
+QE Version                                        :3.3.0.v20230526-0659
+Project Path                                      :C:\Users\a5126135\Dev\Temporary\2023_07_LABS_HMI\IAQ_HMI
+Configuration File                                :IAQ_HMI
+<< METHOD 0 >>
+[Button(self) 0]
+TS                                                : TS25,
+
+<<<< Tuning Type : Normal >>>>
