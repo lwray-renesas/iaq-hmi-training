@@ -17,8 +17,7 @@ const pages_in_lab = [
     "2-Project-Creation.html", "2. Project Creation",
     "3-Configuration.html", "3. Project Configuration",
     "4-QE-Tuning.html", "4. QE Tuning",
-    "5-Build-And-Debug.html", "5. Build &amp; Debug",
-    "6-QE-Monitoring.html", "6. QE Monitoring"];
+    "5-Build-And-Debug.html", "5. Build &amp; Debug"];
 
 /** Class for fulfilling the templating requirements of lab creation */
 class Lab_templater {
