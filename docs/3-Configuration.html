@@ -36,12 +36,14 @@
 			<p>Navigate to the Clocks Tab &amp; perform the following:</p>
 			<ol>
 				<li>Set the <b>Operating mode</b> to <i>High-speed main mode 1.8(V)~5.5(V)</i><br>
-				This sets the operating mode/voltage of the device used for things like flash programming & in other back end operations of the smart configurator.</li>
+					This sets the operating mode/voltage of the device used for things like flash programming & in other
+					back end operations of the smart configurator.</li>
 				<li>Set the <b>EVDD setting</b> to <i>1.8 V &le; EVDD 5.5 &le; V</i><br>
-				This sets the operating voltage of EVDD, as above.</li>
+					This sets the operating voltage of EVDD, as above.</li>
 				<li>Enable the low-speed on-chip oscillator as the source clock for fSXP (sub-system clock)
-				and disable XT1.<br>
-				This uses the LOCO as the fSXP - a crystal is not fitted on this board - therefore it cannot be used.</li>
+					and disable XT1.<br>
+					This uses the LOCO as the fSXP - a crystal is not fitted on this board - therefore it cannot be
+					used.</li>
 			</ol>
 			<img class="modal-thumbnails" src="img/img_lab/clocks.gif" alt="">
 		</details>
@@ -53,7 +55,8 @@
 				Finally disable the use of the trace function by setting <b>Trace function setting</b> to
 				<i>Unused</i>.<br>
 				Enabling trace function consumes RAM unncessarily as we will not be using the trace function in this
-				project.</p>
+				project.
+			</p>
 			<img class="modal-thumbnails" src="img/img_lab/system.gif" alt="">
 		</details>
 
@@ -62,7 +65,7 @@
 			<p>Navigate to the Components Tab.<br>
 				This section is where the "magic" happens. The peripheral functions &amp; middlewares can be included,
 				removed and configured from this single location.<br>
-				The process outlined here for adding and configuring the CTSU (Capacitive Touch Sensing Unit) - 
+				The process outlined here for adding and configuring the CTSU (Capacitive Touch Sensing Unit) -
 				is the same one used for <b>all</b> components.<br>
 				It is in the configuration of the peripherals after adding them when the process/layout between the
 				peripherals will differ.
@@ -78,13 +81,15 @@
 				We will:
 			</p>
 			<ul>
-				<li>Use the <b>TSCAP</b> pin as the powersupply to the capactive touch current drive 
-				circuit.
+				<li>Use the <b>TSCAP</b> pin as the powersupply to the capactive touch current drive
+					circuit.
 				</li>
 				<li>Use the <b>TS25</b> pin which is connected to the capacitve touch elecrtode.
 				</li>
-				<li>Configure the driver to use the <b>DTC</b> to handle the <i>Data transfer of INTCTSUWR & INCTSURD</i>.<br>
-					This automates the configuration of the internal CTSU registers during a scan, avoiding using the CPU.
+				<li>Configure the driver to use the <b>DTC</b> to handle the <i>Data transfer of INTCTSUWR &
+						INCTSURD</i>.<br>
+					This automates the configuration of the internal CTSU registers during a scan, avoiding using the
+					CPU.
 				</li>
 			</ul>
 			<img class="modal-thumbnails" src="img/img_lab/configurectsu.gif" alt="">
@@ -93,9 +98,10 @@
 		<details>
 			<summary>3.4 Touch Middleware</summary>
 			<p>Now using the above mechanism, do the following to include the <b>Touch Middleware</b> component.<br>
-				The touch middleware contains the tuning &amp; monitoring code as well as the filtering parameters 
+				The touch middleware contains the tuning &amp; monitoring code as well as the filtering parameters
 				which we will use the QE tools to interact with.<br>
-				The middleware sits on top of the CTSU driver and controls it, abstracting the user away from the hardware. 
+				The middleware sits on top of the CTSU driver and controls it, abstracting the user away from the
+				hardware.
 				Meaning the user doesn't need to interact with the CTSU driver in the code.<br>
 				No further configuration is required.
 			</p>
@@ -114,7 +120,8 @@
 			<ol>
 				<li><b>PORT1 tab:</b> Set the following to <b>Output current</b> &amp; <b>Hi-Z initial output</b>;
 					<i>P16</i>, <i>P17</i><br>
-					These are the LED control pins.</li>
+					These are the LED control pins.
+				</li>
 			</ol>
 			<img class="modal-thumbnails" src="img/img_lab/configureport.gif" alt="">
 		</details>
